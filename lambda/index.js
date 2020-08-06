@@ -27,7 +27,7 @@ const QuestionOneIntentHandler = {
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .reprompt(speakOutput)
             .getResponse();
     }
 };
@@ -42,7 +42,7 @@ const QuestionTwoIntentHandler = {
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .reprompt(speakOutput)
             .getResponse();
     }
 };
@@ -57,7 +57,7 @@ const QuestionThreeIntentHandler = {
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .reprompt(speakOutput)
             .getResponse();
     }
 };
@@ -72,7 +72,7 @@ const QuestionFourIntentHandler = {
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .reprompt(speakOutput)
             .getResponse();
     }
 };
@@ -87,7 +87,7 @@ const QuestionFiveIntentHandler = {
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .reprompt(speakOutput)
             .getResponse();
     }
 };
@@ -102,7 +102,7 @@ const QuestionSixIntentHandler = {
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .reprompt(speakOutput)
             .getResponse();
     }
 };
