@@ -19,42 +19,48 @@
           "name": "QuestionOneIntent",
           "slots": [],
           "samples": [
-            "When does my policy expire"
+            "When does my policy expire",
+            "When does my policy expire in smart finace"
           ]
         },
         {
           "name": "QuestionTwoIntent",
           "slots": [],
           "samples": [
-            "What is my monthly premium"
+            "What is my monthly premium",
+            "What is my monthly premium in smart finace"
           ]
         },
         {
           "name": "QuestionThreeIntent",
           "slots": [],
           "samples": [
-            "What is my policy value"
+            "What is my policy value",
+            "What is my policy value in smart finace"
           ]
         },
         {
           "name": "QuestionFourIntent",
           "slots": [],
           "samples": [
-            "When is the next premium payment due"
+            "When is the next premium payment due",
+            "When is the next premium payment due in smart finace"
           ]
         },
         {
           "name": "QuestionFiveIntent",
           "slots": [],
           "samples": [
-            "What is the equity value of my Universal Policy"
+            "What is the equity value of my Universal Policy",
+            "What is the equity value of my Universal Policy in smart finace"
           ]
         },
         {
           "name": "QuestionFixIntent",
           "slots": [],
           "samples": [
-            "What is the status of my life insurance claim"
+            "What is the status of my life insurance claim",
+            "What is the status of my life insurance claim in smart finace"
           ]
         },
         {
