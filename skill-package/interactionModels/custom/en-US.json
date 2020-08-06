@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "smart finace",
+      "invocationName": "smart finance",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -20,7 +20,7 @@
           "slots": [],
           "samples": [
             "When does my policy expire",
-            "When does my policy expire in smart finace"
+            "When does my policy expire in smart finance"
           ]
         },
         {
@@ -28,7 +28,7 @@
           "slots": [],
           "samples": [
             "What is my monthly premium",
-            "What is my monthly premium in smart finace"
+            "What is my monthly premium in smart finance"
           ]
         },
         {
@@ -36,7 +36,7 @@
           "slots": [],
           "samples": [
             "What is my policy value",
-            "What is my policy value in smart finace"
+            "What is my policy value in smart finance"
           ]
         },
         {
@@ -44,7 +44,7 @@
           "slots": [],
           "samples": [
             "When is the next premium payment due",
-            "When is the next premium payment due in smart finace"
+            "When is the next premium payment due in smart finance"
           ]
         },
         {
@@ -52,7 +52,7 @@
           "slots": [],
           "samples": [
             "What is the equity value of my Universal Policy",
-            "What is the equity value of my Universal Policy in smart finace"
+            "What is the equity value of my Universal Policy in smart finance"
           ]
         },
         {
@@ -60,7 +60,7 @@
           "slots": [],
           "samples": [
             "What is the status of my life insurance claim",
-            "What is the status of my life insurance claim in smart finace"
+            "What is the status of my life insurance claim in smart finance"
           ]
         },
         {
