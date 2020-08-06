@@ -175,6 +175,21 @@ const ErrorHandler = {
     }
 };
 
+// This request interceptor will log all incoming requests to this lambda
+const LoggingRequestInterceptor = {
+    process(handlerInput) {
+        console.log(`Incoming request: ${JSON.stringify(handlerInput.requestEnvelope)}`);
+    }
+};
+
+// This response interceptor will log all outgoing responses of this lambda
+const LoggingResponseInterceptor = {
+    process(handlerInput, response) {
+        console.log(`Outgoing response: ${JSON.stringify(response)}`);
+    }
+};
+
+
 // The SkillBuilder acts as the entry point for your skill, routing all request and response
 // payloads to the handlers above. Make sure any new handlers or interceptors you've
 // defined are included below. The order matters - they're processed top to bottom.
@@ -196,5 +211,13 @@ exports.handler = Alexa.SkillBuilders.custom()
     )
     .addErrorHandlers(
         ErrorHandler,
+    )
+    .addRequestInterceptors(
+        LoggingRequestInterceptor,
+        // LoadAttributesRequestInterceptor
+    )
+    .addResponseInterceptors(
+        LoggingResponseInterceptor,
+        // SaveAttributesResponseInterceptor
     )
     .lambda();
