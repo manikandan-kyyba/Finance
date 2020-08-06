@@ -31,6 +31,76 @@ const QuestionOneIntentHandler = {
     }
 };
 
+const QuestionTwoIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionTwoIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = 'You are monthly premium is Golden Plan.';
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .getResponse();
+    }
+};
+
+const QuestionThreeIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionThreeIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = 'You are policy value is $35345.78';
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .getResponse();
+    }
+};
+
+const QuestionFourIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionFourIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = 'You are next premium payment due is today';
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .getResponse();
+    }
+};
+
+const QuestionFiveIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionFiveIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = 'You are equity value of my Universal Policy is 76576';
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .getResponse();
+    }
+};
+
+const QuestionSixIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionSixIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = 'You are status of my life insurance claim is Done.';
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .getResponse();
+    }
+};
+
 const HelpIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
@@ -111,7 +181,14 @@ const ErrorHandler = {
 exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
         LaunchRequestHandler,
+
         QuestionOneIntentHandler,
+        QuestionTwoIntentHandler,
+        QuestionThreeIntentHandler,
+        QuestionFourIntentHandler,
+        QuestionFiveIntentHandler,
+        QuestionSixIntentHandler,
+
         HelpIntentHandler,
         CancelAndStopIntentHandler,
         SessionEndedRequestHandler,

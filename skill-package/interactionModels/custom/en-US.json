@@ -23,6 +23,41 @@
           ]
         },
         {
+          "name": "QuestionTwoIntent",
+          "slots": [],
+          "samples": [
+            "What is my monthly premium"
+          ]
+        },
+        {
+          "name": "QuestionThreeIntent",
+          "slots": [],
+          "samples": [
+            "What is my policy value"
+          ]
+        },
+        {
+          "name": "QuestionFourIntent",
+          "slots": [],
+          "samples": [
+            "When is the next premium payment due"
+          ]
+        },
+        {
+          "name": "QuestionFiveIntent",
+          "slots": [],
+          "samples": [
+            "What is the equity value of my Universal Policy"
+          ]
+        },
+        {
+          "name": "QuestionFixIntent",
+          "slots": [],
+          "samples": [
+            "What is the status of my life insurance claim"
+          ]
+        },
+        {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
         }
