@@ -56,7 +56,7 @@
           ]
         },
         {
-          "name": "QuestionFixIntent",
+          "name": "QuestionSixIntent",
           "slots": [],
           "samples": [
             "What is the status of my life insurance claim",
@@ -67,7 +67,7 @@
           "name": "QuestionSevenIntent",
           "slots": [],
           "samples": [
-            "New Question"
+            "My Sample Question"
           ]
         },
         {
