@@ -107,6 +107,21 @@ const QuestionSixIntentHandler = {
     }
 };
 
+const QuestionSevenIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionSevenIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = 'You are status of my life insurance claim is Done.';
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
+            .reprompt(speakOutput)
+            .getResponse();
+    }
+};
+
 const HelpIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
@@ -210,6 +225,7 @@ exports.handler = Alexa.SkillBuilders.custom()
         QuestionFourIntentHandler,
         QuestionFiveIntentHandler,
         QuestionSixIntentHandler,
+        QuestionSevenIntentHandler,
 
         HelpIntentHandler,
         CancelAndStopIntentHandler,

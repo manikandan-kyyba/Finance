@@ -64,6 +64,13 @@
           ]
         },
         {
+          "name": "QuestionSevenIntent",
+          "slots": [],
+          "samples": [
+            "New Question"
+          ]
+        },
+        {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
         }
