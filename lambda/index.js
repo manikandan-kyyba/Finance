@@ -3,7 +3,7 @@
 // session persistence, api calls, and more.
 const Alexa = require('ask-sdk-core');
 
-const AppName = 'Smart fiance';
+const AppName = 'Smart finance';
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
