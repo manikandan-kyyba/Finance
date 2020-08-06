@@ -16,7 +16,7 @@
           "samples": []
         },
         {
-          "name": "Question1Intent",
+          "name": "QuestionOneIntent",
           "slots": [],
           "samples": [
             "When does my policy expire"

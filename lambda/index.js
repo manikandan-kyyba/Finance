@@ -17,10 +17,10 @@ const LaunchRequestHandler = {
     }
 };
 
-const Question1IntentHandler = {
+const QuestionOneIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'Question1Intent';
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionOneIntent';
     },
     handle(handlerInput) {
         const speakOutput = 'You are policy expire date is today.';
@@ -111,7 +111,7 @@ const ErrorHandler = {
 exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
         LaunchRequestHandler,
-        Question1IntentHandler,
+        QuestionOneIntentHandler,
         HelpIntentHandler,
         CancelAndStopIntentHandler,
         SessionEndedRequestHandler,
