@@ -26,6 +26,7 @@ const QuestionOneIntentHandler = {
         const speakOutput = 'You are policy expire date is today.';
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
             //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
             .getResponse();
     }
@@ -40,6 +41,7 @@ const QuestionTwoIntentHandler = {
         const speakOutput = 'You are monthly premium is Golden Plan.';
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
             //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
             .getResponse();
     }
@@ -54,6 +56,7 @@ const QuestionThreeIntentHandler = {
         const speakOutput = 'You are policy value is $35345.78';
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
             //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
             .getResponse();
     }
@@ -68,6 +71,7 @@ const QuestionFourIntentHandler = {
         const speakOutput = 'You are next premium payment due is today';
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
             //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
             .getResponse();
     }
@@ -82,6 +86,7 @@ const QuestionFiveIntentHandler = {
         const speakOutput = 'You are equity value of my Universal Policy is 76576';
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
             //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
             .getResponse();
     }
@@ -96,6 +101,7 @@ const QuestionSixIntentHandler = {
         const speakOutput = 'You are status of my life insurance claim is Done.';
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
             //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
             .getResponse();
     }
