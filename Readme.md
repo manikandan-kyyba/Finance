@@ -31,19 +31,10 @@ https://www.amazon.com/privacy
 https://developer.amazon.com/docs/tools/icon-builder.html
 
 
-open smart finance
+open smart insurance services
 When does my policy expire
 What is my monthly premium
 What is my policy value
 When is the next premium payment due
 What is the equity value of my Universal Policy
 What is the status of my life insurance claim
-
-
-open smart finance
-When does my policy expire in smart finance
-What is my monthly premium in smart finance
-What is my policy value in smart finance
-When is the next premium payment due in smart finance
-What is the equity value of my Universal Policy in smart finance
-What is the status of my life insurance claim in smart finance

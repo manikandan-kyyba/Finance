@@ -1,7 +1,7 @@
 {
-  "name": "smart-finance",
+  "name": "smart-insurance-services",
   "version": "1.0.0",
-  "description": "smart finance skills",
+  "description": "Smart insurance services skills",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

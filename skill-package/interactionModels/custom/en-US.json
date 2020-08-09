@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "smart finance",
+      "invocationName": "smart insurance servicese",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -19,55 +19,49 @@
           "name": "QuestionOneIntent",
           "slots": [],
           "samples": [
-            "When does my policy expire",
-            "When does my policy expire in smart finance"
+            "When does my policy expire"
           ]
         },
         {
           "name": "QuestionTwoIntent",
           "slots": [],
           "samples": [
-            "What is my monthly premium",
-            "What is my monthly premium in smart finance"
+            "What is my monthly premium"
           ]
         },
         {
           "name": "QuestionThreeIntent",
           "slots": [],
           "samples": [
-            "What is my policy value",
-            "What is my policy value in smart finance"
+            "What is my policy value"
           ]
         },
         {
           "name": "QuestionFourIntent",
           "slots": [],
           "samples": [
-            "When is the next premium payment due",
-            "When is the next premium payment due in smart finance"
+            "When is the next premium payment due"
           ]
         },
         {
           "name": "QuestionFiveIntent",
           "slots": [],
           "samples": [
-            "What is the equity value of my Universal Policy",
-            "What is the equity value of my Universal Policy in smart finance"
+            "What is the equity value of my Universal Policy"
           ]
         },
         {
           "name": "QuestionSixIntent",
           "slots": [],
           "samples": [
-            "What is the status of my life insurance claim",
-            "What is the status of my life insurance claim in smart finance"
+            "What is the status of my life insurance claim"
           ]
         },
         {
           "name": "QuestionSevenIntent",
           "slots": [],
           "samples": [
-            "My Sample Question"
+            "This is my sample question"
           ]
         },
         {
@@ -78,5 +72,5 @@
       "types": []
     }
   },
-  "version": "8"
+  "version": "1"
 }
