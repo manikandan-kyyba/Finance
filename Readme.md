@@ -33,7 +33,7 @@ https://developer.amazon.com/docs/tools/icon-builder.html
 
 Alexa Open smart insurance services
 
-I did like to know some details about my policy ?
+I did like to know some details about my policy
 
 5193
 
@@ -44,7 +44,5 @@ What is my monthly premium
 When is the next premium due
 
 What is the equity value of my Universal Policy
-
-Thank you that’s all I want to know
 
 Thank you that is all I want to know
