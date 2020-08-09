@@ -5,7 +5,9 @@
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
-                    "samples": []
+                    "samples": [
+                        "Thank you that's all I want to know"
+                    ]
                 },
                 {
                     "name": "AMAZON.HelpIntent",
@@ -14,7 +16,7 @@
                 {
                     "name": "AMAZON.StopIntent",
                     "samples": [
-                        "Thank you that's all I want to know"
+                        "Thank you"
                     ]
                 },
                 {

@@ -46,5 +46,3 @@ When is the next premium due
 What is the equity value of my Universal Policy
 
 Thank you that’s all I want to know
-
-Thank you, goodbye
