@@ -6,7 +6,7 @@
                 {
                     "name": "AMAZON.CancelIntent",
                     "samples": [
-                        "Thank you that's all I want to know"
+                        "Thank you"
                     ]
                 },
                 {
@@ -16,7 +16,7 @@
                 {
                     "name": "AMAZON.StopIntent",
                     "samples": [
-                        "Thank you"
+                        "Thank you that is all I want to know"
                     ]
                 },
                 {
