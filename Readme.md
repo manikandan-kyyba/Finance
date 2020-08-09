@@ -32,9 +32,7 @@ https://developer.amazon.com/docs/tools/icon-builder.html
 
 
 open smart insurance services
-When does my policy expire
-What is my monthly premium
-What is my policy value
-When is the next premium payment due
-What is the equity value of my Universal Policy
-What is the status of my life insurance claim
+I did like to know some details about my policy
+
+
+

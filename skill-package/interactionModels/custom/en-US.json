@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "smart insurance servicese",
+            "invocationName": "smart insurance services",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
