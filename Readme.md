@@ -31,8 +31,20 @@ https://www.amazon.com/privacy
 https://developer.amazon.com/docs/tools/icon-builder.html
 
 
-open smart insurance services
-I did like to know some details about my policy
+Alexa Open smart insurance services
 
+I did like to know some details about my policy ?
 
+5193
 
+When does my policy expire
+
+What is my monthly premium
+
+When is the next premium due
+
+What is the equity value of my Universal Policy
+
+Thank you that’s all I want to know
+
+Thank you, goodbye
