@@ -30,7 +30,7 @@ const MainQuestionIntentHandler = {
         const policyLastDigit = Alexa.getSlotValue(requestEnvelope, 'policyLastDigit');
         sessionAttributes['policyLastDigit'] = policyLastDigit;
 
-        const speakOutput = `You are number is ${policyLastDigit}; Thank You. What information would you like to know?`;
+        const speakOutput = "Thank You. What information would you like to know?";
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
