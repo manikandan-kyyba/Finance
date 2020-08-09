@@ -9,9 +9,24 @@ const LaunchRequestHandler = {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speakOutput = `Welcome to ${AppName}. What would you like to do?`;
+        const speakOutput = `Welcome to ${AppName}. How can I help?`;
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(speakOutput)
+            .getResponse();
+    }
+};
+
+const MainQuestionIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'MainQuestionIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = 'Please provide the last 4 digits of your policy number';
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .withSimpleCard(AppName, speakOutput)
             .reprompt(speakOutput)
             .getResponse();
     }
@@ -219,6 +234,8 @@ exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
         LaunchRequestHandler,
 
+        MainQuestionIntentHandler,
+        
         QuestionOneIntentHandler,
         QuestionTwoIntentHandler,
         QuestionThreeIntentHandler,

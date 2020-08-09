@@ -16,6 +16,13 @@
           "samples": []
         },
         {
+          "name": "MainQuestionIntent",
+          "slots": [],
+          "samples": [
+            "I did like to know some details about my policy"
+          ]
+        },
+        {
           "name": "QuestionOneIntent",
           "slots": [],
           "samples": [
