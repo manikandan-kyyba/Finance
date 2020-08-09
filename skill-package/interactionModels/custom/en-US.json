@@ -1,83 +1,122 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "smart insurance servicese",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "smart insurance servicese",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MainQuestionIntent",
+                    "slots": [
+                        {
+                            "name": "policyLastDigit",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                            "samples": [
+                                "{policyLastDigit}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I did like to know some details about my policy"
+                    ]
+                },
+                {
+                    "name": "QuestionOneIntent",
+                    "slots": [],
+                    "samples": [
+                        "When does my policy expire"
+                    ]
+                },
+                {
+                    "name": "QuestionTwoIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is my monthly premium"
+                    ]
+                },
+                {
+                    "name": "QuestionThreeIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is my policy value"
+                    ]
+                },
+                {
+                    "name": "QuestionFourIntent",
+                    "slots": [],
+                    "samples": [
+                        "When is the next premium payment due"
+                    ]
+                },
+                {
+                    "name": "QuestionFiveIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is the equity value of my Universal Policy"
+                    ]
+                },
+                {
+                    "name": "QuestionSixIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is the status of my life insurance claim"
+                    ]
+                },
+                {
+                    "name": "QuestionSevenIntent",
+                    "slots": [],
+                    "samples": [
+                        "This is my sample question"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
         },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
+        "dialog": {
+            "intents": [
+                {
+                    "name": "MainQuestionIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "policyLastDigit",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.885802416946.593426710346"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
         },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "MainQuestionIntent",
-          "slots": [],
-          "samples": [
-            "I did like to know some details about my policy"
-          ]
-        },
-        {
-          "name": "QuestionOneIntent",
-          "slots": [],
-          "samples": [
-            "When does my policy expire"
-          ]
-        },
-        {
-          "name": "QuestionTwoIntent",
-          "slots": [],
-          "samples": [
-            "What is my monthly premium"
-          ]
-        },
-        {
-          "name": "QuestionThreeIntent",
-          "slots": [],
-          "samples": [
-            "What is my policy value"
-          ]
-        },
-        {
-          "name": "QuestionFourIntent",
-          "slots": [],
-          "samples": [
-            "When is the next premium payment due"
-          ]
-        },
-        {
-          "name": "QuestionFiveIntent",
-          "slots": [],
-          "samples": [
-            "What is the equity value of my Universal Policy"
-          ]
-        },
-        {
-          "name": "QuestionSixIntent",
-          "slots": [],
-          "samples": [
-            "What is the status of my life insurance claim"
-          ]
-        },
-        {
-          "name": "QuestionSevenIntent",
-          "slots": [],
-          "samples": [
-            "This is my sample question"
-          ]
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        }
-      ],
-      "types": []
+        "prompts": [
+            {
+                "id": "Elicit.Slot.885802416946.593426710346",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please provide the last four digits of your policy number"
+                    }
+                ]
+            }
+        ]
     }
-  },
-  "version": "1"
 }

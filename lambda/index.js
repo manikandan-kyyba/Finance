@@ -23,7 +23,14 @@ const MainQuestionIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'MainQuestionIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'Please provide the last 4 digits of your policy number';
+        const { attributesManager, requestEnvelope } = handlerInput;
+        // the attributes manager allows us to access session attributes
+        const sessionAttributes = attributesManager.getSessionAttributes();
+
+        const policyLastDigit = Alexa.getSlotValue(requestEnvelope, 'policyLastDigit');
+        sessionAttributes['policyLastDigit'] = policyLastDigit;
+
+        const speakOutput = `You are number is ${policyLastDigit}; Thank You. What information would you like to know?`;
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
