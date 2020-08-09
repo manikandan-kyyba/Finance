@@ -48,21 +48,21 @@
                     "name": "QuestionThreeIntent",
                     "slots": [],
                     "samples": [
-                        "What is my policy value"
+                        "When is the next premium due"
                     ]
                 },
                 {
                     "name": "QuestionFourIntent",
                     "slots": [],
                     "samples": [
-                        "When is the next premium payment due"
+                        "What is the equity value of my Universal Policy"
                     ]
                 },
                 {
                     "name": "QuestionFiveIntent",
                     "slots": [],
                     "samples": [
-                        "What is the equity value of my Universal Policy"
+                        "When is the next premium payment due"
                     ]
                 },
                 {

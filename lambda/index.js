@@ -45,7 +45,7 @@ const QuestionOneIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionOneIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'You are policy expire date is today.';
+        const speakOutput = 'Your policy expires on 26th August 2031';
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
@@ -60,7 +60,7 @@ const QuestionTwoIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionTwoIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'You are monthly premium is Golden Plan.';
+        const speakOutput = 'Your monthly premium is $153';
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
@@ -75,7 +75,7 @@ const QuestionThreeIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionThreeIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'You are policy value is $35345.78';
+        const speakOutput = 'Your next premium is due on 14th September 2020';
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
@@ -90,7 +90,7 @@ const QuestionFourIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuestionFourIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'You are next premium payment due is today';
+        const speakOutput = 'Today’s equity value of your Universal policy is $14,657.90';
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .withSimpleCard(AppName, speakOutput)
@@ -242,7 +242,7 @@ exports.handler = Alexa.SkillBuilders.custom()
         LaunchRequestHandler,
 
         MainQuestionIntentHandler,
-        
+
         QuestionOneIntentHandler,
         QuestionTwoIntentHandler,
         QuestionThreeIntentHandler,
